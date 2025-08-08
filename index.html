@@ -1,0 +1,245 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRAVEMAN | Магазин мужских товаров</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo">BRAVEMAN</a>
+      <!-- Поиск -->
+      <div class="search-wrapper">
+        <input class="header__search" type="text" id="searchInput" placeholder="Поиск по каталогу..." />
+        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2"></line>
+        </svg>
+      </div>
+      <!-- Иконки -->
+      <div class="header__icons">
+        <a href="#" class="header__icon" title="Избранное">
+          <img src="img/star.svg" alt="Избранное">
+        </a>
+        <a href="#" class="header__icon" title="Корзина">
+          <svg viewBox="0 0 24 24" fill="white">
+            <path
+              d="M7 4h-2l-3 9h20l-3-9h-2l1.6 5h-13.2l1.6-5zm-3 15c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm12 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z" />
+          </svg>
+        </a>
+      </div>
+      <!-- Навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔍 Секция фильтров и сортировки -->
+  <section id="filters" class="filters container">
+    <h2 style="text-align: center; padding: 20px 0; font-size: 35px;">Фильтр товаров</h2>
+    <div class="filter-controls">
+      <select id="category-filter">
+        <option value="all">Все категории</option>
+        <option value="clothes">Одежда</option>
+        <option value="accessories">Аксессуары</option>
+      </select>
+      <select id="sort-filter">
+        <option value="popular">По популярности</option>
+        <option value="price-low">Сначала дешевые</option>
+        <option value="price-high">Сначала дорогие</option>
+        <option value="newest">Новинки</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Каталог -->
+  <a href="product.html">
+    <section id="catalog" class="products">
+      <div class="container">
+        <div class="products__cards" id="productList">
+          <!-- Продукты рендерятся через JS -->
+        </div>
+      </div>
+    </section>
+  </a>
+
+  <section class="top">
+    <video autoplay muted loop playsinline class="top-video">
+      <source src="https://thumbs.dreamstime.com/videothumb_large16509/165092805.webm" type="video/mp4" />
+      Ваш браузер не поддерживает видеофон.
+    </video>
+    <div class="top-overlay"></div>
+    <div class="top-content">
+      <h1>Брутальность начинается здесь</h1>
+      <p>Ощути силу настоящего ухода за собой</p>
+      <a href="#catalog" class="top-btn">Перейти в каталог</a>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section class="about ">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__content">
+          <h2 class="about__title">О нас</h2>
+          <p class="about__text">
+           <span style="font-size: 22px; font-weight: 700; color: #000; " >BRAVEMAN</span> — это мужской бренд, который сочетает стиль, качество и комфорт.
+            Мы предлагаем лучшие товары для уверенных в себе мужчин, которые ценят индивидуальность и свободу.</p>
+          
+          <p class="about__text">
+            Наша миссия — помогать вам выглядеть и чувствовать себя лучше каждый день.
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="img/brav-foto2.png" alt="Мужчина в стильной одежде">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Секция преимуществ -->
+  <section style="background-color: #fbfbfb;" id="advantages" class="advantages">
+    <div class="container">
+      <h2 style="text-align: center; padding: 20px 0; font-size: 35px;">Почему выбирают нас</h2>
+      <div class="advantage-list">
+        <div class="advantage-item">
+          <img src="img/advant.jpg" alt="Качество">
+          <h3>Только мужские товары</h3>
+          <p>Узкая специализация — мы знаем, что нужно.</p>
+        </div>
+        <div class="advantage-item">
+          <img src="img/advant2.jpg" alt="Доставка">
+          <h3>Быстрая доставка</h3>
+          <p>Отправляем в день заказа.</p>
+        </div>
+        <div class="advantage-item">
+          <img src="img/advant3.jpg" alt="Гарантия">
+          <h3>Гарантия возврата</h3>
+          <p>14 дней на возврат без объяснений.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 🆕 Новинки -->
+  <section id="new" class="products-highlight">
+    <div class="container">
+      <h2 style="text-align: center; padding: 20px 0; font-size: 35px;">Новинки</h2>
+      <div class="product-grid">
+        <!-- Сюда динамически можно вставить 3–4 карточки товаров -->
+        <div><a href="">
+            <img src="img/product11.png" alt="">
+          </a></div>
+        <div><a href="">
+            <img src="img/product22.png" alt="">
+          </a></div>
+        <div><a href="">
+            <img src="img/product33.png" alt="">
+          </a></div>
+        <div><a href="">
+            <img src="img/product44.png" alt="">
+          </a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎁 Секция акций -->
+  <section id="promo" class="promo">
+    <div class="container">
+      <div class="promo-content">
+        <h2>Скидка 20% на первый заказ</h2>
+        <p>Успей до конца недели. Введи промокод <strong>BRAVE20</strong> при оформлении.</p>
+        <button class="btn">Получить скидку</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👤 Отзывы -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2 style="text-align: center; padding: 20px 0; font-size: 35px;">Отзывы покупателей</h2>
+      <div class="review-list">
+        <div class="review-item">
+          <p>"Качество отличное, доставка быстрая. Брал футболку — очень доволен!"</p>
+          <span>— Иван К., Москва</span>
+        </div>
+        <div class="review-item">
+          <p>"Отличный сервис, упаковано стильно, всё подошло. Рекомендую!"</p>
+          <span>— Дмитрий П., Казань</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💳 Оплата и доставка -->
+  <section id="payment" class="payment-delivery ">
+    <div class="container">
+      <h2 style="text-align: center; padding: 20px 0; font-size: 35px;">Оплата и доставка</h2>
+      <div class="payment-delivery__inner">
+        <div class="payment-delivery__wrapper">
+             <p class="payment-delivery-text">Оплата</p>
+          <ul class="payment-delivery__payment">
+         
+            <li> <a href=""><img src="img/visa.png" alt="Visa"></a></li>
+            <li><a href=""><img src="img/mastercard.jpg" alt="MasterCard"></a> </li>
+            <li> <a href=""><img src="img/mir.jpg" alt="Мир"></a></li>
+          </ul>
+          <p class="payment-delivery-text">Доставка</p>
+          <ul class="payment-delivery__payment">
+            
+            <li> <a href=""><img src="img/cdek.png" alt="СДЭК"></a></li>
+            <li><a href=""><img src="img/pochta.jpg" alt="ПочтаРоссии"></a> </li>
+            <li> <a href=""><img src="img/kur.jpg" alt="Курьер"></a></li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column;" class="payment-form__inner">
+          <h2 style="text-align: center; padding: 15px 0;">Будь в курсе</h2>
+          <form class="payment-form">
+            <input style="border: 1px solid;" type="email" placeholder="Ваш e-mail" required>
+            <button type="submit" class="btn">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- 📍 Контакты -->
+  <section style="background-color: black;" id="contacts" class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <dic style="position: relative;" class="map__wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.253063280664!2d43.10106397657842!3d44.201492571081495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4057a3a52839efc5%3A0x6b1a5dd99f11b131!2z0YPQuy4gNDAg0JvQtdGCINCf0L7QsdC10LTRiywgMiwg0JrRgNCw0YHQvdGL0Lkg0J_QsNGF0LDRgNGMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCDQoNC-0YHRgdC40Y8sIDM1NzIwNA!5e1!3m2!1sru!2skr!4v1754472000983!5m2!1sru!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span  style="position: absolute; top: -74px; left: 7px;  color: #f1f1f1; font-size: 1.8rem; font-weight: bold; letter-spacing: 2px;">BRAVEMAN</span> 
+        </div>
+        <div class="contacts__content">
+          <p style="color: #ffffff;" >Свяжитесь с нами: <a style="text-decoration: none;" href="mailto:support@braveman.ru">support@braveman.ru</a></p>
+          <a style="text-decoration: none;" href="tel:+79123456789">+7 (912) 345-67-89</a>
+          <p>Адрес: г. Минеральные Воды, ул. Примерная, 1</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
