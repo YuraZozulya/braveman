@@ -25,7 +25,6 @@
       display: block;
     }
 
-    /* Base styles */
     body {
       font-family: 'Arial', sans-serif;
       font-size: 16px;
@@ -38,7 +37,6 @@
       margin: auto;
     }
 
-    /* Header */
     .header {
       background-color: #111;
       color: #fff;
@@ -65,7 +63,6 @@
       top: 1px;
     }
 
-    /* Search */
     .search-wrapper {
       position: relative;
       max-width: 300px;
@@ -90,7 +87,6 @@
       pointer-events: none;
     }
 
-    /* Icons */
     .header__icons {
       display: flex;
       gap: 16px;
@@ -103,7 +99,6 @@
       color: white;
     }
 
-    /* Navigation */
     .nav__list {
       display: flex;
       gap: 20px;
@@ -118,7 +113,6 @@
       color: #ccc;
     }
 
-    /* Products */
     .products {
       padding: 45px 0;
     }
@@ -249,13 +243,11 @@
     .img-wrapper {
       width: 100%;
       height: 200px;
-      /* фиксированная высота, можно изменить по вкусу */
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       background-color: #f8f8f8;
-      /* светлый фон под фото */
     }
 
     .img-wrapper img {
@@ -291,7 +283,6 @@
       position: absolute;
       inset: 0;
       background: rgba(0, 0, 0, 0.4);
-      /* затемнение видео */
       z-index: 1;
     }
 
@@ -371,7 +362,6 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* === Фильтры === */
     .filters .filter-controls {
       display: flex;
       flex-wrap: wrap;
@@ -385,7 +375,6 @@
       border: 1px solid #000;
     }
 
-    /* === Преимущества === */
     .advantages .advantage-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -405,7 +394,6 @@
       margin-bottom: 5px;
     }
 
-    /* === Новинки === */
     .products-highlight .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -419,8 +407,6 @@
       border-radius: 5%;
     }
 
-
-    /* === Промо-блок === */
     .promo {
       background: #111;
       color: #fff;
@@ -440,7 +426,6 @@
       border-radius: 8px;
     }
 
-    /* === Отзывы === */
     .reviews .review-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -454,7 +439,6 @@
       font-style: italic;
     }
 
-    /* === Оплата и доставка === */
     .payment-delivery ul {
       list-style: disc;
       padding-left: 40px;
@@ -469,8 +453,6 @@
 
     }
 
-
-
     .payment-delivery__payment {
       display: flex;
       align-items: center;
@@ -484,16 +466,12 @@
       text-align: center;
     }
 
-
     .payment-delivery__payment img {
       width: 65px;
       border-radius: 5%;
       height: 50px;
     }
 
-
-
-    /* === Подписка === */
     .payment-form {
       display: flex;
       flex-wrap: wrap;
@@ -516,9 +494,6 @@
       border: none;
     }
 
-
-    /* === Контакты === */
-
     .contacts__content {
       display: flex;
       justify-content: space-between;
@@ -536,28 +511,12 @@
       color: #fff;
     }
 
-
-
     iframe {
       width: 100%;
       height: 320px;
       filter: brightness(50%);
       padding-top: 25px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* === Адаптив === */
 
 
     @media (max-width: 1000px) {
