@@ -15,7 +15,6 @@ const products = [
 
 const productList = document.getElementById("productList");
 
-// Рендер карточек
 function renderProducts(list) {
   productList.innerHTML = "";
   list.forEach(product => {
@@ -38,14 +37,12 @@ function renderProducts(list) {
   });
 }
 
-// Поиск
 document.getElementById("searchInput").addEventListener("input", function () {
   const query = this.value.trim().toLowerCase();
   const filtered = products.filter(p => p.name.toLowerCase().includes(query));
   renderProducts(filtered);
 });
 
-// Действия
 function showModal(text) {
   const modal = document.getElementById("modal");
   const modalText = document.getElementById("modal-text");
@@ -56,5 +53,5 @@ function showModal(text) {
   }, 2000);
 }
 
-// Инициализация
+
 renderProducts(products);
